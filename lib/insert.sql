@@ -1,51 +1,48 @@
-INSERT INTO projects VALUES ("project_1", "cat1", 1000000, 2018-01-01, 2018-03-28);
-INSERT INTO projects VALUES ("project_2", "cat4", 100000, 2018-04-01, 2018-04-01);
-INSERT INTO projects VALUES ("project_3", "cat3", 1050000, 2018-01-01, 2018-02-28);
-INSERT INTO projects VALUES ("project_4", "cat1", 200000, 2018-01-01, 2018-03-28);
-INSERT INTO projects VALUES ("project_5", "cat5", 900000, 2018-06-01, 2018-05-28);
-INSERT INTO projects VALUES ("project_6", "cat1", 8360000, 2018-01-01, 2018-03-28);
-INSERT INTO projects VALUES ("project_7", "cat7", 1200000, 2018-01-01, 2018-08-28);
-INSERT INTO projects VALUES ("project_8", "cat4", 1500000, 2018-01-01, 2018-06-28);
-INSERT INTO projects VALUES ("project_9", "cat6", 830000, 2018-01-01, 2018-10-28);
-INSERT INTO projects VALUES ("project_10", "cat1", 6200000, 2018-01-01, 2018-11-28);
-INSERT INTO projects VALUES ("project_11", "cat2", 1200000, 2018-03-01, 2018-03-28);
-INSERT INTO projects VALUES ("project_12", "cat3", 1600000, 2018-01-01, 2018-03-28);
-INSERT INTO projects VALUES ("project_13", "cat1", 1800000, 2018-05-01, 2018-03-28);
-INSERT INTO projects VALUES ("project_14", "cat1", 1000000, 2018-01-01, 2018-04-28);
-INSERT INTO projects VALUES ("project_15", "cat5", 1500000, 2018-01-01, 2018-06-28);
-INSERT INTO projects VALUES ("project_16", "cat5", 1900000, 2018-07-01, 2018-11-28);
-INSERT INTO projects VALUES ("project_17", "cat7", 9400000, 2018-01-01, 2018-03-28);
-INSERT INTO projects VALUES ("project_18", "cat1", 7300000, 2018-09-01, 2018-12-28);
-INSERT INTO projects VALUES ("project_19", "cat2", 8200000, 2018-03-01, 2018-05-28);
-INSERT INTO projects VALUES ("project_20", "cat4", 500000, 2018-11-01, 2018-12-28);
+INSERT INTO users (id, name, age) VALUES (1, 'Finnebar', 17), (2, 'Bear', 6), (3, 'Iguana', 4), (4, 'Alex', 33), 
+(5, 'Amanda', 24), (6, 'Sophie', 24), (7, 'Rosey', 9), (8, 'Victoria', 23), (9, 'Franz', 100), (10, 'Hermione', 30), 
+(11, 'Voldemort', 90), (12, 'Marisa', 24), (13, 'Swizzle', 4), (14, 'Sirius', 36), (15, 'Albus', 113), (16, 'Squid', 5), 
+(17, 'Whale', 6), (18, 'Pacha', 5), (19, 'Ena', 24), (20, 'Katie', 24);
 
+INSERT INTO projects (id, title, category, funding_goal, start_date, end_date) VALUES 
+(1, 'Help me buy a guitar', 'music', 500.00, '2013-06-30', '2013-07-30'), 
+(2, 'My book on SQL', 'books', 20.00, '2013-01-01', '2014-01-01'), 
+(3, 'The next Harry Potter', 'books', 1000.00, '2013-05-30', '2015-05-30'), 
+(4, 'Animal shelter needs dog food', 'charity', 400.00, '2013-03-14', '2013-06-30'), 
+(5, 'Voldement needs a body', 'charity', 6000.00, '2013-03-20', '2013-09-20'), 
+(6, 'The next Inna-Gadda-Davida', 'music', 200.00, '2014-12-30', '2015-12-30'), 
+(7, 'Iguana needs tail operation', 'charity', 2000.00, '2013-10-02', '2013-10-30'), 
+(8, 'I have bed bugs!', 'charity', 800.00, '2014-06-30', '2014-06-31'), 
+(9, 'I want to teach English in China', 'charity', 3000.00, '2013-06-30', '2013-09-30'), 
+(10, 'Help save birds of paradise', 'charity', 5000.00, '2012-03-20', '2013-06-30');
 
-INSERT INTO users VALUES ("John Smith", 28);
-INSERT INTO users VALUES ("John Doe", 38);
-INSERT INTO users VALUES ("Maria Johnson", 28);
-INSERT INTO users VALUES ("Susan Fetch", 26);
-INSERT INTO users VALUES ("Rob Stevenson", 28);
-INSERT INTO users VALUES ("Steve Smith", 22);
-INSERT INTO users VALUES ("Jay Sora", 35);
-INSERT INTO users VALUES ("Daisy Underwood", 39);
-INSERT INTO users VALUES ("Sky Cloud", 28);
-INSERT INTO users VALUES ("Adele Thompson", 30);
-INSERT INTO users VALUES ("Carla Griffith", 40);
-INSERT INTO users VALUES ("Johny Doe", 28);
-INSERT INTO users VALUES ("Mary Van", 42);
-INSERT INTO users VALUES ("Jen Robinson", 71);
-INSERT INTO users VALUES ("Katy Smith", 26);
-INSERT INTO users VALUES ("Angela Pepper", 72);
-INSERT INTO users VALUES ("Seth Smith", 51);
-INSERT INTO users VALUES ("Bob Hamilton", 46);
-INSERT INTO users VALUES ("Don Morrison", 58);
-INSERT INTO users VALUES ("Ian Neilson", 35);
-
-
--- 
--- CREATE TABLE pledges (
---   id INTEGER PRIMARY KEY,
---   user_id INTEGER,
---   project_id TEXT,
---   amount INTEGER
--- );
+INSERT INTO pledges (id, amount, user_id, project_id) VALUES
+(1, 10.00, 1, 2), 
+(2, 20.00, 1, 3), 
+(3, 40.00, 1, 4), 
+(4, 50.00, 2, 3), 
+(5, 10.00, 3, 2), 
+(6, 20.00, 4, 4), 
+(7, 40.00, 5, 10), 
+(8, 60.00, 6, 10), 
+(9, 50.00, 7, 9), 
+(10, 700.00, 8, 8), 
+(11, 1000.00, 8, 7), 
+(12, 40.00, 9, 6), 
+(13, 50.00, 9, 3), 
+(14, 50.00, 10, 4), 
+(15, 24.00, 12, 1), 
+(16, 34.00, 11, 1), 
+(17, 12.00, 13, 6), 
+(18, 19.00, 14, 5), 
+(19, 20.00, 15, 5), 
+(20, 40.00, 16, 6), 
+(21, 35.50, 17, 7), 
+(22, 40.00, 18, 8), 
+(23, 60.00, 19, 9), 
+(24, 70.00, 20, 10), 
+(25, 100.00, 20, 4), 
+(26, 40.00, 19, 1), 
+(27, 20.00, 18, 6), 
+(28, 90.00, 17, 9), 
+(29, 230.00, 16, 6), 
+(30, 450.00, 15, 5);
