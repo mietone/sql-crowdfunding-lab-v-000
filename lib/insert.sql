@@ -20,17 +20,32 @@ INSERT INTO projects VALUES ("project_19", "cat2", 8200000, 2018-03-01, 2018-05-
 INSERT INTO projects VALUES ("project_20", "cat4", 500000, 2018-11-01, 2018-12-28);
 
 
-INSERT INTO users VALUES ("John Smith", "cat1", 500000, 2018-11-01, 2018-12-28);
+INSERT INTO users VALUES ("John Smith", 28);
+INSERT INTO users VALUES ("John Doe", 38);
+INSERT INTO users VALUES ("Maria Johnson", 28);
+INSERT INTO users VALUES ("Susan Fetch", 26);
+INSERT INTO users VALUES ("Rob Stevenson", 28);
+INSERT INTO users VALUES ("Steve Smith", 22);
+INSERT INTO users VALUES ("Jay Sora", 35);
+INSERT INTO users VALUES ("Daisy Underwood", 39);
+INSERT INTO users VALUES ("Sky Cloud", 28);
+INSERT INTO users VALUES ("Adele Thompson", 30);
+INSERT INTO users VALUES ("Carla Griffith", 40);
+INSERT INTO users VALUES ("Johny Doe", 28);
+INSERT INTO users VALUES ("Mary Van", 42);
+INSERT INTO users VALUES ("Jen Robinson", 71);
+INSERT INTO users VALUES ("Katy Smith", 26);
+INSERT INTO users VALUES ("Angela Pepper", 72);
+INSERT INTO users VALUES ("Seth Smith", 51);
+INSERT INTO users VALUES ("Bob Hamilton", 46);
+INSERT INTO users VALUES ("Don Morrison", 58);
+INSERT INTO users VALUES ("Ian Neilson", 35);
 
-CREATE TABLE users (
-  id INTEGER PRIMARY KEY,
-  name TEXT,
-  age INTEGER
-);
 
-CREATE TABLE pledges (
-  id INTEGER PRIMARY KEY,
-  user_id INTEGER,
-  project_id TEXT,
-  amount INTEGER
-);
+-- 
+-- CREATE TABLE pledges (
+--   id INTEGER PRIMARY KEY,
+--   user_id INTEGER,
+--   project_id TEXT,
+--   amount INTEGER
+-- );
