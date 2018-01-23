@@ -37,7 +37,7 @@ FROM users
 JOIN pledges
   ON users.id = pledges.user_id
 GROUP BY users.name
-ORDER BY pledges.amount DESC,
+ORDER BY pledges.amount ASC,
   users.name ASC"
 end
 
